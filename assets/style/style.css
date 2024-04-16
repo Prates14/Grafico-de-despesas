@@ -1,0 +1,203 @@
+:root {
+    /* cores primarias */
+    --soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    /* cores secundarias */
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+/* estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--Cream);
+}
+
+p {
+    font-size: 18px;
+}
+
+hr {
+    width: 100%;
+    border: solid 1px var(--Cream);
+    margin: 30px 0;
+}
+
+/* estilização do cabeçalho */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 3% auto 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 720px;
+    padding: 35px;
+    border-radius: 25px;
+    background-color: var(--soft-red);
+    color: var(--Very-pale-orange);
+}
+
+.cabecalho-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 95px;
+}
+
+.cabecalho-info p:last-child {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.cabecalho-img img {
+    height: 56px;
+}
+
+/* estilização do conteúdo */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 720px;
+    height: 600px;
+    padding: 35px 35px 45px 35px;
+    border-radius: 20px;
+    background-color: var(--Very-pale-orange);
+}
+
+.content .titulo h1 {
+    margin-left: 10%;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--Dark-brown);
+}
+
+/* grafico de barras */
+.grafico-barras {
+    display: flex;
+    width: 100%;
+    height: 60%;
+}
+
+.grafico-barras .grafico-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.grafico-barras .grafico-area .barras {
+    flex-grow: 1;
+    display: flex;
+    align-items: end;
+    gap: 30px;
+    margin: 0 20px;
+}
+
+.grafico-barras .grafico-area .barras .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    width: calc(100% / 7);
+    height: 100%;
+    cursor: pointer;
+}
+
+.grafico-barras .grafico-area .barras .stats>div {
+    background-color: var(--soft-red);
+    border-radius: 6%;
+    width: 100%;
+}
+
+.semanas {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.semanas .dia-semana {
+    text-align: center;
+    width: calc(100% / 7);
+    color: var(--Medium-brown);
+}
+
+/* dados mensal */
+.content-dados {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.content-dados .info {
+    color: var(--Medium-brown);
+}
+
+.content-dados .val {
+    color: var(--Dark-brown);
+    font-weight: 700;
+}
+
+/* informacao mes atual */
+.content-dados .dados-mes-atual {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content-dados .dados-mes-atual .val {
+    font-size: 50px;
+}
+
+/* informacao mes anterior */
+.content-dados .dados-mes-anterior {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* estilização dos numeros de barra*/
+.exibir {
+    display: none;
+    width: 115%;
+    height: 35px;
+    padding: 4px 1px;
+    border-radius: 10%;
+    text-align: center;
+    font-weight: 700;
+    background-color: var(--Dark-brown);
+    color: var(--Very-pale-orange);
+}
+
+/* rodapé */
+.attribution {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Dark-brown);
+}
+
+.attribution a {
+    color: var(--Cyan);
+    font-weight: 700;
+}

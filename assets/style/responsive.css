@@ -1,0 +1,90 @@
+@media (max-width: 780px) {
+    .container {
+        margin-top: 15%;
+    }
+
+    .cabecalho,
+    .content {
+        width: 90%;
+    }
+
+    .cabecalho {
+        padding: 20px 35px;
+    }
+
+    .content {
+        height: 500px;
+        padding: 30px;
+    }
+
+    .content .titulo h1 {
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    .grafico-barras .grafico-area .barras {
+        gap: 17px;
+        margin: 0 10px;
+    }
+
+    .exibir {
+        height: auto;
+        font-size: 12px;
+    }
+
+    .content-dados .dados-mes-atual .val {
+        font-size: 45px;
+    }
+
+    .attribution p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 430px) {
+    p {
+        font-size: 15px;
+    }
+
+    .cabecalho-info p:last-child {
+        font-size: 30px;
+    }
+
+    .content .titulo h1 {
+        font-size: 25px;
+    }
+
+    .exibir {
+        writing-mode: vertical-lr;
+        width: auto;
+        padding: 4px;
+    }
+
+    .content-dados .dados-mes-atual .val {
+        font-size: 35px;
+    }
+
+    .attribution {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 365px) and (min-width: 320px) {
+    p {
+        font-size: 13px;
+    }
+
+    .cabecalho-info {
+        height: 75px;
+    }
+
+    .cabecalho-img img {
+        height: 45px;
+    }
+
+    .cabecalho-info p:last-child,
+    .content-dados .dados-mes-atual .val {
+        font-size: 25px;
+    }
+}

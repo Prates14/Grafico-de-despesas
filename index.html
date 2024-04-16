@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font-Family do google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
+  <!-- arquivo de estilos -->
+  <link rel="stylesheet" href="assets/style/style.css">
+  <link rel="stylesheet" href="assets/style/responsive.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+
+<body>
+  <main class="container">
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <div class="cabecalho-info">
+        <p>My balance</p>
+        <p>$921.48</p>
+      </div>
+
+      <div class="cabecalho-img">
+        <img src="assets/images/logo.svg" alt="Logo">
+      </div>
+    </header>
+    <!-- Conteúdo do gráfico -->
+    <section class="content">
+      <div class="titulo">
+        <h1>Spending - Last 7 days</h1>
+      </div>
+      <!-- Gráfico de barras -->
+      <div class="grafico-barras">
+        <div class="grafico-area">
+          <div class="barras">
+            <!-- Barras do gráfico (div#id) | valor da barra (span) -->
+            <div class="stats">
+              <span class="exibir"></span>
+              <div id="mon"></div>
+            </div>
+
+            <div class="stats">
+              <span class="exibir"></span>
+              <div id="tue"></div>
+            </div>
+
+            <div class="stats">
+              <span class="exibir"></span>
+              <div id="wed"></div>
+            </div>
+
+            <div class="stats">
+              <span class="exibir"></span>
+              <div id="thu"></div>
+            </div>
+
+            <div class="stats">
+              <span class="exibir"></span>
+              <div id="fri"></div>
+            </div>
+
+            <div class="stats">
+              <span class="exibir"></span>
+              <div id="sat"></div>
+            </div>
+
+            <div class="stats">
+              <span class="exibir"></span>
+              <div id="sun"></div>
+            </div>
+          </div>
+          <!-- Dias da semana em cada barra -->
+          <div class="semanas">
+            <p class="dia-semana">mon</p>
+            <p class="dia-semana">tue</p>
+            <p class="dia-semana">wed</p>
+            <p class="dia-semana">thu</p>
+            <p class="dia-semana">fri</p>
+            <p class="dia-semana">sat</p>
+            <p class="dia-semana">sun</p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <!-- Conteúdo mensal (total do mes atual e comparação com mes anterior) -->
+      <section class="content-dados">
+        <div class="dados-mes-atual">
+          <p class="info">Total this month</p>
+          <p class="val">$478.33</p>
+        </div>
+
+        <div class="dados-mes-anterior">
+          <p class="val">+2.4%</p>
+          <p class="info">From last month</p>
+        </div>
+      </section>
+    </section>
+    <!-- rodapé -->
+    <div class="attribution">
+      <p>-Challenge by: <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>-Coded by: <a href="https://github.com/Prates14">Guilherme Prates</a>.</p>
+    </div>
+  </main>
+</body>
+<script src="assets/js/main.js"></script>
+
+</html>

@@ -10,7 +10,7 @@ Criação de um website apresentando um gráfico de barras dinâmico **(arquivo 
 > - Responsividade
 
 ### site
-[expenses-chart-component-main](https://prates14.github.io/expenses-chart-component-main/)
+[expenses-chart-component-main](https://prates14.github.io/Grafico-de-despesas/)
 
 ## História Resumo 👨‍💻
 Após ficar um certo tempo focado em estudos teóricos na área de **Ciência da Computação**, precisava voltar a praticar na criação de projetos para não "enferrujar". Então pensei em fazer este projeto básico e evoluir a partir dele, criando assim, websites cada vez mais avançados e complexos.
